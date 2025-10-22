@@ -43,7 +43,6 @@ async def ask_question(update: Update, user_id):
         else :
             await update.message.reply_text(f"  نتيجة زبالة.انطر بعد اذنك") 
             
-        await update.message.reply_text("الكويز انتهى 🎉 اضغط /start لبدء كويز جديد.")
         del user_state[user_id]
 
 # Handle answers
